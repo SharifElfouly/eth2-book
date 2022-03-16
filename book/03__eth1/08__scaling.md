@@ -22,7 +22,7 @@ So, as `participation_cost` increases, we very quickly begin to face issues with
 
 Our concerns don't end there, unfortunately. If `participation_cost` grow to a sufficient level, users may no longer find it feasible to participate from a home computer and may be forced to rely on already-centralized cloud infrastructure. Such a scenario would give cloud providers significant control over the network simply by nature of having control over the physical hardware running its nodes.
 
-This relationship between participation costs and centralization forms the basis of the scalability dilemma in modern blockchain systems. Linear increases `state_size` and `participation_cost` are ineffective long-term solutions. Instead, blockchains seek to find constructions that allow for *superlinear* scaling, in which `state_size` increases result in a disproportionately small increase to `participation_cost`.
+This relationship between participation costs and centralization forms the basis of the scalability dilemma in modern blockchain systems. Linear increases `state_size` and `participation_cost` are ineffective long-term solutions. Instead, blockchains seek to find constructions that allow for *sublinear* scaling, in which `state_size` increases result in a disproportionately small increase to `participation_cost`.
 
 In order for `state_size` to increase more rapidly than `participation_cost`, it *must* be true that some users are not executing all transactions. Indeed, the basis for all superlinear scaling is that, under certain conditions, users may safely ignore a given transaction entirely.
 
